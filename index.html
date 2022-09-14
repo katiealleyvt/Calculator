@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+	<title>Parcel Sandbox</title>
+	<meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css">
+</head>
+
+<body>
+	<div id="app">
+		<div id="textbox-div">
+			<textarea id="textbox" rows="1"></textarea>
+		</div>
+		<div id="button-group">
+			<!-- possibly divide into rows and columns-->
+				<button onclick="clearTotal()" id="clear-all">AC</button>
+				<button onclick="backspace()"id="backspace">←</button>
+				<button onclick="updateTextbox(this)"id="divide">/</button>
+				<button onclick="updateTextbox(this)"id="multiply">*</button>
+
+				<button onclick="updateTextbox(this)"id="b7">7</button>
+				<button onclick="updateTextbox(this)"id="b8">8</button>
+				<button onclick="updateTextbox(this)"id="b9">9</button>
+				<button onclick="updateTextbox(this)"id="minus">-</button>
+
+				<button onclick="updateTextbox(this)"id="b4">4</button>
+				<button onclick="updateTextbox(this)"id="b5">5</button>
+				<button onclick="updateTextbox(this)"id="b6">6</button>
+				<button onclick="updateTextbox(this)"id="plus">+</button>
+
+				<button onclick="updateTextbox(this)"id="b1">1</button>
+				<button onclick="updateTextbox(this)"id="b2">2</button>
+				<button onclick="updateTextbox(this)"id="b3">3</button>
+				<button onclick="calculateTotal()"id="equal">=</button>
+
+				<button onclick="updateTextbox(this)"id="b0">0</button>
+				<button onclick="updateTextbox(this)"id="period">.</button>
+		</div>
+	</div>
+
+	<script src="src/index.js">
+	</script>
+</body>
+
+</html>
